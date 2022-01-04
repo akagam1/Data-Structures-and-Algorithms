@@ -10,6 +10,16 @@ class LinkedList:
 	def __init__(self):
 		self.head = None
 
+	def traverse(self):
+		temp = self.head
+		while (temp):
+			if (temp.next != None):
+				print(temp.data,end="=>")
+			else:
+				print(f"{temp.data}")
+
+			temp = temp.next
+
 
 #insertion and examples
 
@@ -21,3 +31,5 @@ third = Node(3)
 
 linkL.head.next = second   #connect head to node 2
 second.next = third		   #connects node 2 to 3
+
+linkL.traverse()
