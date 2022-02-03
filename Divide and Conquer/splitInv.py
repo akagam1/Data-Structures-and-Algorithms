@@ -1,3 +1,8 @@
+import os 
+
+with open('numbers.txt', 'r') as f:
+	input_list = [int(line.strip()) for line in f]
+
 count = 0
 def sortSplit(inp):
 	global count
@@ -36,5 +41,4 @@ def sortSplit(inp):
 
 	return count
 
-a = [7,1,5,2,6,3,0]  #14 splits
-print(sortSplit(a))
+print(sortSplit(input_list))

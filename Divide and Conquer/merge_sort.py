@@ -39,5 +39,5 @@ def merge_sort(inp):
 
 	return inp
 
-a = [7,1,5,2,2]
+a = [7,1,5,2,6]
 print(merge_sort(a))
